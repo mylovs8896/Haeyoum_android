@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+
+    <Button
+        android:id="@+id/btn_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="setting"
+         />
+
+    <Button
+        android:id="@+id/btn_vote"
+        android:layout_width="81dp"
+        android:layout_height="wrap_content"
+        android:text="vote"
+         />
+
+    <Button
+        android:id="@+id/btn_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="board"
+        />
+
+    <Button
+        android:id="@+id/btn_plan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="plan"
+         />
+
+    <Button
+        android:id="@+id/btn_chat"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:text="chat"
+         />
+
+    <Button
+        android:id="@+id/btn_search_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search_g"
+         />
+
+    <Button
+        android:id="@+id/btn_member_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="member_list"
+         />
+
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="post"
+         />
+
+</LinearLayout>

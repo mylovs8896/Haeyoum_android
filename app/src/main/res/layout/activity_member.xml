@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    >
+
+    <Button
+        android:id="@+id/btn_search_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search_m"
+ />
+
+    <Button
+        android:id="@+id/btn_alram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="alram"
+ />
+
+    <Button
+        android:id="@+id/btn_create_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="create_group"
+  />
+
+    <Button
+        android:id="@+id/btn_mypage"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="mypage"
+ />
+
+    <Button
+        android:id="@+id/btn_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="group" />
+</LinearLayout>
