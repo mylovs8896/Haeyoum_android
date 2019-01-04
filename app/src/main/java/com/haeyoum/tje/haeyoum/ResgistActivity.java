@@ -64,7 +64,7 @@ public class ResgistActivity extends AppCompatActivity {
                         public void run() {
                         try {
                             // Create URL
-                            URL endPoint = new URL("http://192.168.10.78:8080/A_Haeyoum/m/member/regist");
+                            URL endPoint = new URL("http://192.168.10.78:8080/A_Haeyoum/m/member/regist"); 
                             // Create connection
                             HttpURLConnection myConnection =
                                     (HttpURLConnection) endPoint.openConnection();
