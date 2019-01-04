@@ -29,26 +29,18 @@ public class ResgistActivity extends AppCompatActivity {
     Button btn_reset;
     Button btn_submit;
 
-    TextView str_id;
     TextView str_pw;
-    TextView str_pw_check;
     TextView str_name;
-    TextView str_nick;
     TextView str_email;
-    TextView str_birthday;
     TextView str_output;
 
     Gson gson = new Gson();
 
     public void initRefs() {
 
-        str_id = findViewById(R.id.str_id);
         str_pw = findViewById(R.id.str_pw);
-        str_pw_check = findViewById(R.id.str_pw_check);
         str_name = findViewById(R.id.str_name);
-        str_nick = findViewById(R.id.str_nick);
         str_email = findViewById(R.id.str_email);
-        str_birthday = findViewById(R.id.str_birthday);
 
         btn_reset = findViewById(R.id.btn_reset);
         btn_submit = findViewById(R.id.btn_submit);
@@ -58,13 +50,9 @@ public class ResgistActivity extends AppCompatActivity {
         btn_reset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                str_id.setText("");
                 str_pw.setText("");
-                str_pw_check.setText("");
                 str_name.setText("");
-                str_nick.setText("");
                 str_email.setText("");
-                str_birthday.setText("");
             }
         });
 
@@ -76,7 +64,7 @@ public class ResgistActivity extends AppCompatActivity {
                         public void run() {
                         try {
                             // Create URL
-                            URL endPoint = new URL("http://192.168.10.123:8080/Haeyoum/m/member/regist");
+                            URL endPoint = new URL("http://192.168.10.78:8080/A_Haeyoum/m/member/regist");
                             // Create connection
                             HttpURLConnection myConnection =
                                     (HttpURLConnection) endPoint.openConnection();
@@ -84,12 +72,9 @@ public class ResgistActivity extends AppCompatActivity {
                             myConnection.setRequestMethod("POST");
 
                             Mem mem = new Mem();
-                            mem.setMember_id(str_id.getText().toString().trim());
-                            mem.setMember_password(str_pw.getText().toString().trim());
-                            mem.setMember_name(str_name.getText().toString().trim());
-                            mem.setMember_nick_name(str_nick.getText().toString().trim());
-                            mem.setMember_email(str_email.getText().toString().trim());
-                            mem.setMember_birthday(str_birthday.getText().toString().trim());
+                            mem.setM_password(str_pw.getText().toString().trim());
+                            mem.setM_name(str_name.getText().toString().trim());
+                            mem.setM_email(str_email.getText().toString().trim());
 
                             String out = mem.toServer();
                             Log.d(LOG_TAG, out);
